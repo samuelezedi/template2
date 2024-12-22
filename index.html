@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Template - Navbar</title>
+</head>
+
+<body>
+    <header class="bg-gray-900 sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+        <div class="flex items-baseline justify-between px-4 py-3 sm:p-0">
+            <div class="">
+                <img class="h-8" src="img/logo-inverted.svg" alt="">
+            </div>
+            <div class="sm:hidden">
+                <button class="text-gray-500 focus:text-white hover:text-white focus:outline-none" id="hamburger">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path id="x-icon" class="hidden" fill-rule="evenodd"
+                            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                        <path id="h-icon" class="" fill-rule="evenodd"
+                            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav class="hidden sm:block" id="nav-list">
+            <div class="flex flex-col text-white font-semibold px-2 pt-2 pb-4 sm:flex-row sm:p-0" >
+                <a href="#" class="hover:bg-gray-800 rounded px-2 py-1 "> List your properties </a>
+                <a href="#" class="hover:bg-gray-800 rounded px-2 py-1 mt-1 sm:mt-0 sm:ml-2"> Trips </a>
+                <a href="#" class="hover:bg-gray-800 rounded px-2 py-1 mt-1 sm:mt-0 sm:ml-2"> Messages </a>
+                <div class="relative hidden sm:block sm:ml-6" id="account-icon-btn">
+                    <button id="account-dropdown"
+                        class="relative z-10 block h-8 w-8 rounded-full overflow-hidden border-2 border-gray-400 focus:outline-none focus:border-white">
+                        <img class="h-full w-full object-cover"
+                            src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
+                            alt="">
+                    </button>
+                    <button id="dropdown-overlay" tabindex="-1"
+                        class="hidden fixed inset-0 bg-black opacity-50 cursor-default"></button>
+                    <div id="dropdown-content"
+                        class="hidden absolute right-0 bg-white flex-col rounded-lg py-2 text-gray-800 w-48 mt-2 shadow-xl">
+                        <a href="#" class="px-4 py-2 hover:bg-indigo-500 hover:text-white">Account Settings</a>
+                        <a href="#" class="px-4 py-2 hover:bg-indigo-500 hover:text-white">Support</a>
+                        <a href="#" class="px-4 py-2 hover:bg-indigo-500 hover:text-white">Sign out</a>
+                    </div>
+                </div>
+            </div>
+            <div class="px-4 py-5 border-t border-gray-800 sm:hidden">
+                <div class="flex items-center space-x-3">
+                    <img class="h-8 w-8 rounded-full border-2 object-cover"
+                        src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=256&q=80"
+                        alt="">
+                        <span class="font-semibold text-white">John Doe</span>
+                </div>
+                <div class="flex flex-col mt-4 space-y-3">
+                    <a href="#" class="text-gray-400 hover:text-white">Account Settings</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Support</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Sign out</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
